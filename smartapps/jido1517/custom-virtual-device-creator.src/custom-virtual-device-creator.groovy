@@ -13,7 +13,7 @@
  *  for the specific language governing permissions and limitations under the License.
  * dth 
    jido1517(Gitgub Repository Integration: lemonade30us / smartthingsJido / master)
-    - Virtual Text, Virtual TextSwitch, Virtual text 5, Virtual ContactGroup 
+    - Virtual Text, Virtual TextSwitch, Virtual Stock, Virtual text 5, Virtual ContactGroup 
    iquix(Gitgub Repository Integration: iquix / Smartthings / master)
     - GalaxyHome Music Switch DTH   https://cafe.naver.com/stsmarthome/18154
    WooBooung(Gitgub Repository Integration: WooBooung / BooungThings / master)
@@ -41,7 +41,7 @@ preferences {
 def mainPage() {
     dynamicPage(name: "mainPage") {
         section ("New Device") {
-            input "virtualDeviceType", "enum", title: "Which type of virtual device do you want to create?", multiple: false, required: true, options: ["Virtual Switch", "Virtual Dimmer Switch", "Virtual Text", "Virtual Text5", "Virtual TextSwitch", "ContactGroup", "GalaxyHome Music Switch" ]
+            input "virtualDeviceType", "enum", title: "Which type of virtual device do you want to create?", multiple: false, required: true, options: ["Virtual Switch", "Virtual Dimmer Switch", "Virtual Text", "Virtual Text5", "Virtual Stock", "Virtual TextSwitch", "ContactGroup", "GalaxyHome Music Switch" ]
         }
         section ("Hub") {
             input "devHub", "enum", title: "Hub", required: false, multiple: false, options: getHubs()
