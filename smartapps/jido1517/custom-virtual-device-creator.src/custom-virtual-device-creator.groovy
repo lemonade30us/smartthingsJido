@@ -16,9 +16,6 @@
     - Virtual Text, Virtual TextSwitch, Virtual Stock, Virtual text 5, Virtual ContactGroup 
    iquix(Gitgub Repository Integration: iquix / Smartthings / master)
     - GalaxyHome Music Switch DTH   https://cafe.naver.com/stsmarthome/18154
-   WooBooung(Gitgub Repository Integration: WooBooung / BooungThings / master)
-    - SmartWeather Station For Korea DTH  https://cafe.naver.com/stsmarthome/2561
-    - Weather Flow DTH  https://cafe.naver.com/stsmarthome/4208
  */
 
 definition(
@@ -41,7 +38,7 @@ preferences {
 def mainPage() {
     dynamicPage(name: "mainPage") {
         section ("New Device") {
-            input "virtualDeviceType", "enum", title: "Which type of virtual device do you want to create?", multiple: false, required: true, options: ["Virtual Switch", "Virtual Dimmer Switch", "Virtual Text", "Virtual Text5", "Virtual Stock", "Virtual TextSwitch", "ContactGroup", "GalaxyHome Music Switch" ]
+            input "virtualDeviceType", "enum", title: "Which type of virtual device do you want to create?", multiple: false, required: true, options: ["Virtual Switch", "Virtual Dimmer Switch", "Virtual Text", "Virtual Text5", "Virtual Stock Ver1", "Virtual Stock Ver2", "Virtual Stock Ver3", "Virtual TextSwitch", "ContactGroup", "GalaxyHome Music Switch" ]
         }
         section ("Hub") {
             input "devHub", "enum", title: "Hub", required: false, multiple: false, options: getHubs()
